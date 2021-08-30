@@ -1,0 +1,18 @@
+
+
+Example to run :
+=================
+
+// https://localhost/index.php/{MODULE_NAME}/{METHOD_NAME}?limit={LIMIT_VALUE}
+http://localhost/index.php/user/list?limit=20
+
+
+If you recall the index.php file, we checked if the $uri[2] variable is set to user. 
+Also, the $uri[3] variable value would act as a method name. 
+In the above case, the $uri[3] variable is set to list. 
+
+{MODULE_NAME} = $uri[2]  = user
+
+{METHOD_NAME} = $uri[3]  = list
+
+Thus, it would end up calling the listAction method of the UserController class
